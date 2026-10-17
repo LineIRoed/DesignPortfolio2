@@ -1,3 +1,5 @@
+import "./project.css";
+
 function Flixio() {
     return (
         <main className="project-page">

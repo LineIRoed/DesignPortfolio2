@@ -1,3 +1,5 @@
+import "./project.css";
+
 function TheOceanQuiz() {
     return (
         <main className="project-page">

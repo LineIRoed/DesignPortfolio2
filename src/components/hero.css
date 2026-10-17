@@ -1,0 +1,110 @@
+
+/* Hero */
+
+.hero {
+  min-height: 75vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.hero h1 {
+  font-size: clamp(3rem, 8vw, 6rem);
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+/* Octopus */
+
+.octopus {
+  width: 700px;
+  max-width: 100%;
+  height: auto;
+  margin: 20px auto;
+  display: block;
+}
+
+.gif-wrapper {
+  position: relative;
+  width: min(700px, 100%);
+  margin: 0 auto;
+}
+
+/* Project numbers */
+
+.project-number {
+  position: absolute;
+  top: 10%;
+  left: 20%;
+  color: #a31621;
+  font-size: 4rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.project-number:hover {
+  color: #db222a;
+  transition: color 0.1s ease;
+}
+
+.project-two {
+  top: 10%;
+  left: 75%;
+}
+
+.project-three {
+  top: 40%;
+  left: 2%;
+}
+
+.project-four {
+  top: 40%;
+  left: 90%;
+}
+
+.project-five {
+  top: 95%;
+  left: 50%;
+}
+
+/* Project labels */
+
+.project-label {
+  position: absolute;
+  right: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  white-space: nowrap;
+  font-size: 1rem;
+  margin-right: 10px;
+  color: #db222a;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.1s ease, visibility 0.1s;
+}
+
+.project-number:hover .project-label {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0.1s;
+}
+
+.label-right {
+  left: 100%;
+  margin-left: 10px;
+  right: auto;
+}
+
+.label-down {
+  top: 100%;
+  left: 50%;
+  right: auto;
+  margin: 0;
+  transform: translateX(-50%);
+}

@@ -1,0 +1,56 @@
+
+/* About page */
+
+.about-page {
+  min-height: 70vh;
+  padding: 20px 6%;
+}
+
+.about-page h1 {
+  font-size: clamp(2rem, 5vw, 4rem);
+  color: #a31621;
+  margin-bottom: 20px;
+}
+
+.about-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 60px;
+  width: 100%;
+}
+
+.about-image {
+  width: 40%;
+  max-width: 400px;
+  max-height: 55vh;
+  height: auto;
+  object-fit: contain;
+}
+
+.about-text {
+  flex: 1;
+  min-width: 0;
+  color: #fff;
+}
+
+.about-text-red {
+  color: #db222a;
+}
+
+/* Responsive About page */
+
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .about-image {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .about-content p {
+    font-size: 1rem;
+  }
+}

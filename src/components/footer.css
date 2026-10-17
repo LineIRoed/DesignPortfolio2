@@ -1,0 +1,31 @@
+
+/* Footer */
+
+.footer {
+  padding: 24px 6%;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-links-left {
+  display: flex;
+  gap: 24px;
+}
+
+.socials-link,
+.back-link {
+  color: #a31621;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.socials-link:hover,
+.back-link:hover {
+  color: #db222a;
+  text-decoration: underline;
+  transition: color 0.2s ease;
+}

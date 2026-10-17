@@ -1,3 +1,5 @@
+import "./project.css";
+
 function Romern() {
     return (
         <main className="project-page">

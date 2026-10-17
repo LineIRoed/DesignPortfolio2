@@ -1,0 +1,131 @@
+
+/* Contact page */
+
+.contact-page {
+  min-height: 70vh;
+  padding: 20px 6%;
+}
+
+.contact-page h1 {
+  font-size: 1.5rem;
+  color: #a31621;
+  margin-bottom: 20px;
+}
+
+/* Contact form */
+
+.contact-page form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+.contact-page form p {
+  color: white;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.contact-page .form-success {
+  color: #8fd6a3;
+}
+
+.contact-page .form-error {
+  color: #ff7777;
+}
+
+.contact-page textarea {
+  resize: vertical;
+}
+
+.contact-page input,
+.contact-page textarea {
+  width: 100%;
+  padding: 14px;
+  background-color: transparent;
+  border: 1px solid #a31621;
+  border-radius: 4px;
+  color: #fff;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.contact-page label {
+  color: #fff;
+  font-size: 1rem;
+}
+
+.contact-page input:focus,
+.contact-page textarea:focus {
+  outline: 2px solid #db222a;
+  outline-offset: 3px;
+}
+
+/* Submit button */
+
+.contact-page button {
+  margin-top: 16px;
+  padding: 14px 24px;
+  background-color: #a31621;
+  color: #fff;
+  border: 1px solid #a31621;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.contact-page button:hover {
+  background-color: #db222a;
+}
+
+.contact-page button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Animated banner */
+
+.contact-banner {
+  width: 100%;
+  overflow: hidden;
+  padding: 15px 0;
+  background-color: #a31621;
+  margin-bottom: 100px;
+}
+
+.contact-banner-track {
+  display: flex;
+  width: max-content;
+  animation: contact-scroll 15s linear infinite;
+}
+
+.contact-banner-track span {
+  flex-shrink: 0;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+@keyframes contact-scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* Accessibility */
+
+@media (prefers-reduced-motion: reduce) {
+  .contact-banner-track {
+    animation: none;
+  }
+}

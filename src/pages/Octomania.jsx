@@ -1,3 +1,5 @@
+import "./project.css";
+
 function Octomania() {
     return (
         <main className="project-page">
