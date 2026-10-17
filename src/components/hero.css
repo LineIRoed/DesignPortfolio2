@@ -108,3 +108,27 @@
   margin: 0;
   transform: translateX(-50%);
 }
+
+@media (max-width: 600px) {
+  .hero {
+    min-height: auto;
+    padding: 60px 1rem 100px;
+  }
+
+  .project-number {
+    font-size: 2rem;
+  }
+
+  .project-label {
+    display: none;
+  }
+
+  .project-four {
+    left: auto;
+    right: 2%;
+  }
+   .gif-wrapper .project-number .project-label {
+    display: none;
+  }
+  
+}

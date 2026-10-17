@@ -28,3 +28,25 @@ body {
   white-space: nowrap;
   border: 0;
 }
+
+/* Page layout */
+
+.app-layout {
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-content {
+  flex: 1;
+}
+
+@media (max-width: 600px) {
+  .app-content.home-content {
+    flex: 0 0 auto;
+  }
+  .home-content + .footer {
+    margin-top: 100px;
+  }
+}
