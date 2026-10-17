@@ -1,0 +1,247 @@
+
+/* Universal styling */
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #1e1e24;
+  color: #a31621;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* landing page */
+.hero {
+  min-height: 75vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+}
+.hero h1 {
+  font-size: clamp(3rem, 8vw, 6rem);
+  margin-bottom: 1rem;
+}
+.hero p {
+  font-size: 1.2rem;
+}
+.header {
+  width: 100%;
+  padding: 24px 6%;
+  background-color: #1e1e24;
+}
+
+/* blekksprut */
+.octopus {
+  width: 700px;
+  max-width: 100%;
+  height: auto;
+  margin: 20px auto;
+  display: block;
+}
+.gif-wrapper {
+  position: relative;
+  width: min(700px, 100%);
+  margin: 0 auto;
+}
+
+/* project numbers */
+.project-number {
+  position: absolute;
+  top: 10%;
+  left: 20%;
+  color: #a31621;
+  font-size: 4rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+.project-number:hover {
+  color: #db222a;
+  transition: color 0.1s ease;
+}
+.project-two{
+  top: 10%;
+  left: 75%;
+}
+.project-three{
+  top: 40%;
+  left: 2%;
+}
+.project-four{
+  top: 40%;
+  left: 90%;
+}
+.project-five{
+  top: 95%;
+  left: 50%;
+}
+
+/* project number text */
+.project-label {
+  position: absolute;
+  right: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  white-space: nowrap;
+  font-size: 1rem;
+  margin-right: 10px;
+  color: #db222a;
+
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.1s ease, visibility 0.1s;
+}
+.project-number:hover .project-label {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0.1s;
+}
+.label-right {
+   left: 100%;
+   margin-left: 10px;
+   right: auto;
+}
+.label-down {
+  top: 100%;
+  left: 50%;
+  right: auto;
+  margin: 0;
+  transform: translateX(-50%);
+}
+
+/* navigation bar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #a31621;
+  text-decoration: none;
+}
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+  font-size: 1.5rem;
+}
+.nav-links a {
+  color: #a31621;
+  text-decoration: none;
+}
+.nav-links a:hover {
+  opacity: 0.6;
+  color: #db222a;
+  transition: color 0.3s ease, decoration 0.1s;
+  text-decoration: underline;
+}
+
+/* project page styling*/
+.project-page {
+  padding: 60px 5%;
+}
+.project-header {
+  text-align: center;
+  font-size: 2.5rem;
+}
+.project-description {
+  text-align: center;
+  font-size: 1rem;
+}
+.project-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  padding: 10px;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+.project-video {
+  width: 100%;
+  height: auto;
+  display: block;
+  padding: 10px;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+.project-text {
+  width: 50%;
+  margin: 0 auto;
+  color: #fff;
+  padding: 10px;
+  font-size: 1rem;
+}
+.project-text-strong {
+  color: #db222a;
+  font-size: 1.2rem;
+}
+.project-link {
+  width: 50%;
+  margin: 0 auto;
+  color: #fff;
+  padding: 10px;
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 20px;
+}
+.project-link-link {
+  color: #a31621;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+.project-link-link:hover {
+  opacity: 0.6;
+  color: #db222a;
+  transition: color 0.2s ease, decoration 0.1s;
+  text-decoration: underline;
+}
+
+/* footer styling */
+.footer {
+  padding: 24px 6%;
+}
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-links-left {
+  display: flex;
+  gap: 24px;
+}
+.socials-link,
+.back-link {
+  color: #a31621;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+.socials-link:hover,
+.back-link:hover {
+  color: #db222a;
+  text-decoration: underline;
+  transition: color 0.2s ease;
+}
+
+/* media queries */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    gap: 16px;
+  }
+  .project-text{
+    width: 90%;
+  }
+}
