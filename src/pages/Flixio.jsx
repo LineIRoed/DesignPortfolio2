@@ -40,7 +40,7 @@ function Flixio() {
             <div className="project-link">
                 <p>View the live project here:</p>
                 <a
-                        href="https://flixio-streaming.netlify.app/login"
+                        href="https://flixio-streaming.netlify.app"
                         className="project-link-link"
                         target="_blank"
                         rel="noopener noreferrer"
