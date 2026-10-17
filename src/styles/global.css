@@ -1,4 +1,18 @@
 /* Universal styling */
+@font-face {
+  font-family: "LineRed";
+  src: url("/fonts/NewOrderRegular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "LineRed";
+  src: url("/fonts/NewOrderBold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
 
 * {
   box-sizing: border-box;
@@ -10,9 +24,19 @@ html {
 
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: "LineRed", Arial, sans-serif;
+  font-weight: 400;
   background-color: #1e1e24;
   color: #a31621;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
 }
 
 /* Accessibility */
@@ -48,5 +72,11 @@ body {
   }
   .home-content + .footer {
     margin-top: 100px;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 600px) {
+  .home-content + .footer {
+    margin-top: 40px;
   }
 }

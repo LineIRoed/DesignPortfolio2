@@ -37,11 +37,14 @@ function Flixio() {
                 alt="mockup of streaming service page" 
                 className="project-image"
             />
-            <p className="project-link">
-                View the live project here:
-                <br />
-                <a href="https://flixio-streaming.netlify.app/login" className="project-link-link">Flixio-streaming</a>
-            </p>
+            <a
+                href="https://flixio-streaming.netlify.app/login"
+                className="project-link-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                >
+                Flixio-streaming
+            </a>
         </main>
     );
 }
