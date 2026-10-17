@@ -16,7 +16,7 @@ function Footer() {
             </div>
             <div className="footer-links-right">
                 {!isHome && (
-                <Link to="/" className="back-link">Back</Link>
+                <Link to="/" className="back-link">Back to main page</Link>
             )}
             </div>
         </nav>

@@ -8,6 +8,8 @@ import Flixio from "./pages/Flixio.jsx";
 import TheOceanQuiz from "./pages/TheOceanQuiz.jsx";
 import Romern from "./pages/Romern.jsx";
 import Footer from "./components/Footer.jsx";
+import About from "./pages/About.jsx";
+import Contact from "./pages/Contact.jsx";
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
         <Route path="/projects/flixio" element={<Flixio />} />
         <Route path="/projects/theOceanQuiz" element={<TheOceanQuiz/>} />
         <Route path="/projects/romern" element={<Romern/>} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
     </>

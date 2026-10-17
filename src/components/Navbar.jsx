@@ -10,8 +10,8 @@ function Navbar() {
 
         <div className="nav-links">
           <a href="/">Home</a>
-          <a href="#about">About</a>
-          <a href="#contact">Contact</a>
+          <a href="/About">About</a>
+          <a href="/Contact">Contact</a>
         </div>
       </nav>
     </header>
